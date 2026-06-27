@@ -6,8 +6,8 @@ The Gaming Room is a client that came to Creative Technology Solutions looking t
 
 What I Did Particularly Well
 The section I feel best about is the Recommendations section from Project Three. By that point in the course everything clicked together and I was able to make a clear, well reasoned case for Linux on a cloud provider as the recommended platform. Rather than just listing options, I connected each recommendation directly back to what the client actually needed, affordable scaling, reliable uptime, and compatibility with the existing Java code base. The security section in particular came together well because we had just worked through authentication and authorization hands on in the Module Four assignment so those concepts were fresh.
-What I Found Helpful About the Design Document Process
 
+What I Found Helpful About the Design Document Process
 Working through the design document before writing code made the coding assignments noticeably less confusing. Having already thought through the class hierarchy in the Domain Model section meant that when it was time to implement the Entity base class and the Singleton and Iterator patterns, I already had a mental picture of how everything fit together. The design document forced me to slow down and think about the problem before jumping into solutions, which is not always my instinct when starting a new project.
 
 What I Would Revise
