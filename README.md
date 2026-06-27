@@ -2,20 +2,26 @@
 Software design
 
 Project Summary
+
 The Gaming Room is a client that came to Creative Technology Solutions looking to expand their existing Android game, Draw It or Lose It, into a web based application that could run on multiple platforms. The game is a team based drawing and guessing game similar to Win, Lose or Draw from the 1980s where teams compete to identify drawings before time runs out. They needed the new version to support multiple teams and players simultaneously, enforce unique game and team names, and ensure only one instance of the game service could exist in memory at any given time. My job was to design the software architecture for that expansion and document it in a way that both the development team and the client could understand and act on.
 
 What I Did Particularly Well
+
 The section I feel best about is the Recommendations section from Project Three. By that point in the course everything clicked together and I was able to make a clear, well reasoned case for Linux on a cloud provider as the recommended platform. Rather than just listing options, I connected each recommendation directly back to what the client actually needed, affordable scaling, reliable uptime, and compatibility with the existing Java code base. The security section in particular came together well because we had just worked through authentication and authorization hands on in the Module Four assignment so those concepts were fresh.
 
 
 What I Found Helpful About the Design Document Process
+
 Working through the design document before writing code made the coding assignments noticeably less confusing. Having already thought through the class hierarchy in the Domain Model section meant that when it was time to implement the Entity base class and the Singleton and Iterator patterns, I already had a mental picture of how everything fit together. The design document forced me to slow down and think about the problem before jumping into solutions, which is not always my instinct when starting a new project.
 
 What I Would Revise
+
 If I could go back and revise one part, it would be the Evaluation table from Project Two. The first version had long paragraph blocks in each cell that were hard to read and some of the Mac server side content was not accurate since macOS does not actually have a server license available for commercial deployment. I would go back to that table from the start, use bullet points the way the professor suggested, and get the Mac server limitation right the first time rather than having to correct it later. Getting feedback on that and fixing it was a good learning experience but it would have been better to catch it earlier.
 
 How I Interpreted and Implemented User Needs
+
 The Gaming Room's requirements were pretty specific and each one mapped directly to a design decision. The requirement that only one game instance exist in memory became the Singleton pattern in GameService. The requirement that game and team names be unique became the Iterator pattern in the addGame and addTeam methods. The requirement to support multiple platforms became the client server architecture with a REST API. Keeping the user's needs front and center throughout the design process matters because it is easy to get caught up in what is technically interesting and lose track of what the client actually asked for. Every design decision should be traceable back to a real requirement, otherwise you are just building things for yourself.
 
 How I Approached Designing the Software
+
 The approach that worked best for me was starting with what the client needed and working backwards to the architecture, rather than starting with technology choices and trying to fit the requirements around them. For a future project like this I would use the same sequence: identify the requirements first, translate them into design constraints, choose patterns that address those constraints, and then document all of it before writing a single line of code. The UML diagram was particularly useful as a communication tool because it gave everyone a shared picture of the system that did not require reading through pages of explanation. I would use that approach again on any project involving more than one developer.
